@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,4 +7,10 @@
 body {
   background-color: #101625;
   color: #f7f8f9;
+}
+
+.numbers {
+  font-family: 'Bungee', cursive;
+  /* font-size: 10rem; */
+  font-weight: 400;
 }
