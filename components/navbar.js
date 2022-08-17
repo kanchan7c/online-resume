@@ -33,7 +33,7 @@ const Navbar = () => {
       <ul className='hidden md:block'>
         {navLinks.map((item) => (
           <Link href={item?.link} key={item?.name} className='flex'>
-            <a className='mr-2 lg:mr-5  hover:text-teal-200 font-light lg:text-lg'>
+            <a className='mr-2 lg:mr-5  hover:text-teal-200 font-light lg:text-lg transition-colors'>
               <span className='mr-1 text-xs align-middle text-gray-500'>
                 {item?.icon}
               </span>
@@ -58,7 +58,7 @@ const Navbar = () => {
         >
           {navLinks.map((item) => (
             <Link href={item?.link} key={item?.name}>
-              <a className='mb-4 md:mr-5  hover:text-teal-200 font-light md:text-lg'>
+              <a className='mb-4 md:mr-5  hover:text-teal-200  transition-colors font-light md:text-lg'>
                 {item?.icon}
               </a>
             </Link>

@@ -18,7 +18,7 @@ const Projects = () => {
             key='title'
           />
         </Head>
-        projects
+        <div className='md:min-h-[80vh] p-20 rounded-xl shadow-md shadow-gray-300  border border-gray-50 bg-gradient-to-tr from-gray-900 to-gray-700'></div>
       </Wrapper>
       <Footer />
     </>
