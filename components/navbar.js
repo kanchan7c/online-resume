@@ -48,7 +48,11 @@ const Navbar = () => {
           className={show ? 'block sm:hidden mb-4 ' : 'hidden'}
           onClick={hideMenu}
         />
-        <ul className={show ? 'block flex flex-col justify-between' : 'hidden'}>
+        <ul
+          className={
+            show ? 'sm:hidden block flex flex-col justify-between' : 'hidden'
+          }
+        >
           {navLinks.map((item) => (
             <Link href={item?.link} key={item?.name}>
               <a className='mb-4 md:mr-5  hover:text-teal-200 font-light md:text-lg'>
