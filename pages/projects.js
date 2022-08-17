@@ -12,6 +12,11 @@ const Projects = () => {
         <Head>
           <title>Portfolio | Projects</title>
           <link rel='shortcut icon' href='projects.png' type='image/x-icon' />
+          <meta
+            property='og:title'
+            content='Portfolio | Projects'
+            key='title'
+          />
         </Head>
         projects
       </Wrapper>

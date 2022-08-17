@@ -12,6 +12,7 @@ const Contact = () => {
         <Head>
           <title>Portfolio | Contact</title>
           <link rel='shortcut icon' href='contact.png' type='image/x-icon' />
+          <meta property='og:title' content='Portfolio | Contact' key='title' />
         </Head>
         contact
       </Wrapper>

@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   const navLinks = [
-    { name: 'Home', link: '/', icon: <HomeIcon /> },
+    { name: 'Home', link: '/home', icon: <HomeIcon /> },
     { name: 'About', link: '/about', icon: <InfoIcon /> },
     { name: 'Projects', link: '/projects', icon: <BusinessCenterIcon /> },
     { name: 'Skills', link: '/skills', icon: <ListAltIcon /> },

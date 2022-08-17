@@ -11,6 +11,11 @@ const Experience = () => {
       <Wrapper>
         <Head>
           <title>Portfolio | Experience</title>
+          <meta
+            property='og:title'
+            content='Portfolio | Contact'
+            key='experience'
+          />
           <link rel='shortcut icon' href='work.png' type='image/x-icon' />
         </Head>
         experience

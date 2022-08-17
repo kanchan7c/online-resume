@@ -12,6 +12,7 @@ const About = () => {
         <Head>
           <title>Portfolio | About</title>
           <link rel='shortcut icon' href='about.png' type='image/x-icon' />
+          <meta property='og:title' content='Portfolio | About' key='title' />
         </Head>
         About
       </Wrapper>

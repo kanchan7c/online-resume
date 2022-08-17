@@ -12,6 +12,7 @@ const Skills = () => {
         <Head>
           <title>Portfolio | Skills</title>
           <link rel='shortcut icon' href='skills.png' type='image/x-icon' />
+          <meta property='og:title' content='Portfolio | Skills' key='title' />
         </Head>
         skills
       </Wrapper>
