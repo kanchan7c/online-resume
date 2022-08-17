@@ -30,27 +30,30 @@ const Navbar = () => {
   ];
   return (
     <nav>
-      <ul className='hidden sm:block'>
+      <ul className='hidden md:block'>
         {navLinks.map((item) => (
-          <Link href={item?.link} key={item?.name}>
-            <a className='mr-2 md:mr-5  hover:text-teal-200 font-light md:text-lg'>
-              {item?.name}
+          <Link href={item?.link} key={item?.name} className='flex'>
+            <a className='mr-2 lg:mr-5  hover:text-teal-200 font-light lg:text-lg'>
+              <span className='mr-1 text-xs align-middle text-gray-500'>
+                {item?.icon}
+              </span>
+              <span className='align-middle'>{item?.name}</span>
             </a>
           </Link>
         ))}
       </ul>
       <MenuIcon
-        className={show ? 'hidden' : 'block sm:hidden'}
+        className={show ? 'hidden' : 'block md:hidden'}
         onClick={showMenu}
       />
       <div className='flex flex-col justify-center'>
         <HighlightOffIcon
-          className={show ? 'block sm:hidden mb-4 ' : 'hidden'}
+          className={show ? 'block md:hidden mb-4 ' : 'hidden'}
           onClick={hideMenu}
         />
         <ul
           className={
-            show ? 'sm:hidden block flex flex-col justify-between' : 'hidden'
+            show ? 'md:hidden block flex flex-col justify-between' : 'hidden'
           }
         >
           {navLinks.map((item) => (
