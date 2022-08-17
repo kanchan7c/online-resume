@@ -15,7 +15,7 @@ const HomePage = () => {
       </Head>
       <Header />
       <Wrapper>
-        <div className='flex justify-center align-middle flex-col text-center md:min-h-[80vh] p-5 lg:p-20 rounded-xl shadow-md shadow-gray-300  border border-gray-50 bg-gradient-to-tr from-gray-900 to-gray-700'>
+        <div className='flex justify-center align-middle flex-col text-center min-h-[80vh] p-5 lg:p-20 rounded-xl shadow-md shadow-gray-300  border border-gray-50 bg-gradient-to-tr from-gray-900 to-gray-700'>
           <div className='font-thin text-xs md:text-lg mb-4'>Hi there!</div>
           <div className='font-semibold text-4xl md:text-6xl mb-4'>
             I&apos;m Kanchan
