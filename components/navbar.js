@@ -53,7 +53,7 @@ const Navbar = () => {
         />
         <ul
           className={
-            show ? 'md:hidden block flex flex-col justify-between' : 'hidden'
+            show ? 'md:hidden flex flex-col justify-between' : 'hidden'
           }
         >
           {navLinks.map((item) => (
