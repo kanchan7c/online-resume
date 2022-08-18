@@ -17,7 +17,7 @@ const Card = ({
       <div className='numbers w-[20%] text-2xl md:text-6xl lg:text-[10rem] '>
         {cardNumber}
       </div>
-      <div className='w-[80%]'>
+      <div className='w-[80%] bg-gray-600 rounded-xl pb-2 overflow-hidden'>
         <div className='overflow-scroll'>
           <Image
             src={snapshot}
@@ -27,15 +27,15 @@ const Card = ({
             layout='responsive'
           />
         </div>
-        <div className='md:text-2xl mt-5 lg:mt-10'>
+        <div className='md:text-2xl mt-5 lg:mt-10 pl-5'>
           {title}
           <span className='text-xs font-extralight align-middle mx-5'>
             {date}
           </span>
         </div>
 
-        <div className='mt-2 text-xs sm:text-sm'>{description}</div>
-        <div className='flex gap-5 mt-5 lg:mt-10 '>
+        <div className='mt-2 text-xs sm:text-sm pl-5'>{description}</div>
+        <div className='flex gap-5 mt-5 lg:mt-10 pl-5'>
           {tech.map((item) => (
             <Image
               key={item}
@@ -44,11 +44,11 @@ const Card = ({
               objectFit='contain'
               height={'30rem'}
               width={'30rem'}
-              className='rounded-full bg-white'
+              className='rounded-full bg-white animate-pulse transition-all'
             />
           ))}
         </div>
-        <div className='flex gap-1 lg:gap-5 lg:mt-10 mt-5'>
+        <div className='flex gap-1 lg:gap-5 lg:mt-10 my-5 pl-5'>
           <Button url={demo} target='_blank'>
             View Demo
           </Button>
