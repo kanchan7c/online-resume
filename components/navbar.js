@@ -43,9 +43,9 @@ const Navbar = () => {
         ))}
       </ul>
       {show ? (
-        <HighlightOffIcon className='block md:hidden' onClick={hideMenu} />
+        <HighlightOffIcon className='md:hidden' onClick={hideMenu} />
       ) : (
-        <MenuIcon className='block md:hidden' onClick={showMenu} />
+        <MenuIcon className='md:hidden' onClick={showMenu} />
       )}
 
       <div className='flex flex-col justify-center'>
