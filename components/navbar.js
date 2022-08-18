@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   const navLinks = [
-    { name: 'Home', link: '/home', icon: <HomeIcon /> },
+    { name: 'Home', link: '/', icon: <HomeIcon /> },
     { name: 'About', link: '/about', icon: <InfoIcon /> },
     { name: 'Projects', link: '/projects', icon: <BusinessCenterIcon /> },
     { name: 'Skills', link: '/skills', icon: <ListAltIcon /> },
@@ -42,15 +42,13 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
-      <MenuIcon
-        className={show ? 'hidden' : 'block md:hidden'}
-        onClick={showMenu}
-      />
+      {show ? (
+        <HighlightOffIcon onClick={hideMenu} />
+      ) : (
+        <MenuIcon className='block md:hidden' onClick={showMenu} />
+      )}
+
       <div className='flex flex-col justify-center'>
-        <HighlightOffIcon
-          className={show ? 'block md:hidden mb-4 ' : 'hidden'}
-          onClick={hideMenu}
-        />
         <ul
           className={
             show ? 'md:hidden flex flex-col justify-between' : 'hidden'
