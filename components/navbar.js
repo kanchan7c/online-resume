@@ -43,7 +43,7 @@ const Navbar = () => {
         ))}
       </ul>
       {show ? (
-        <HighlightOffIcon className='md:hidden' onClick={hideMenu} />
+        <HighlightOffIcon className='md:hidden lg:hidden' onClick={hideMenu} />
       ) : (
         <MenuIcon className='md:hidden' onClick={showMenu} />
       )}
