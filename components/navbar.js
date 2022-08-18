@@ -42,7 +42,7 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
-      {show ? (
+      {/* {show ? (
         <HighlightOffIcon
           className='md:hidden text-gray-50 md:text-gray-900'
           onClick={hideMenu}
@@ -65,7 +65,7 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 };

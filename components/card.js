@@ -14,7 +14,7 @@ const Card = ({
 }) => {
   return (
     <div className='flex justify-between p-2 md:p-5 mb-10 align-middle'>
-      <div className='numbers w-[20%] text-2xl md:text-6xl lg:text-[10rem] '>
+      <div className='numbers xs:w-[10%] sm:w-[20%] sm:text-2xl md:text-6xl lg:text-[10rem] '>
         {cardNumber}
       </div>
       <div className='w-[80%] bg-gray-600 rounded-xl pb-2 overflow-hidden'>
@@ -27,7 +27,7 @@ const Card = ({
             layout='responsive'
           />
         </div>
-        <div className='md:text-2xl mt-5 lg:mt-10 pl-5'>
+        <div className='sm:text-lg md:text-2xl mt-5 lg:mt-10 pl-5'>
           {title}
           <span className='text-xs font-extralight align-middle mx-5'>
             {date}

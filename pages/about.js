@@ -34,13 +34,13 @@ const About = () => {
               <p className='lg:text-lg text-xs font-thin text-cyan-600 font-mono tracking-widest'>
                 WELCOME!
               </p>
-              <h2 className='lg:text-6xl text-4xl my-2'>
+              <h2 className='lg:text-6xl text-2xl sm:text-4xl my-2'>
                 Let&apos;s break the ice.
               </h2>
-              <p className='lg:text-xl text-lg text-cyan-400 mt-4'>
+              <p className='lg:text-xl text-sm sm:text-lg text-cyan-400 mt-4'>
                 I&apos;m a Frontend Web Developer & Web Designer.
               </p>
-              <p className='text-md lg:text-lg tracking-wider my-8 paragraph lg:w-[90%] italic'>
+              <p className='text-xs sm:text-md lg:text-lg tracking-wider my-8 paragraph lg:w-[90%] italic'>
                 Having attention to the details and my love for modern web
                 design has brought me immense joy while working on my personal
                 projects. I come with great experience in Business Operations

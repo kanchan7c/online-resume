@@ -32,6 +32,7 @@ const Contact = () => {
               href='https://github.com/kanchan7c'
               target='_blank'
               rel='noreferrer'
+              className='text-6xl'
             >
               <GitHubIcon className='text-6xl cursor-pointer' />
             </a>
@@ -40,17 +41,22 @@ const Contact = () => {
               href='https://www.linkedin.com/in/kanchan-chaudhary-a38568bb/'
               target='_blank'
               rel='noreferrer'
+              className='text-6xl'
             >
               <LinkedInIcon className='text-6xl cursor-pointer' />
             </a>
 
-            <a href='mailto:kanchan@shekharpro.com' className='cursor-pointer'>
+            <a
+              href='mailto:kanchan@shekharpro.com'
+              className='text-6xl cursor-pointer'
+            >
               <EmailIcon className='text-6xl cursor-pointer' />
             </a>
             <a
               href='https://www.facebook.com/profile.php?id=100010316479068'
               target='_blank'
               rel='noreferrer'
+              className='text-6xl'
             >
               <FacebookIcon className='text-6xl cursor-pointer' />
             </a>
@@ -59,6 +65,7 @@ const Contact = () => {
               href='https://www.instagram.com/kanchan_samaj_s/'
               target='_blank'
               rel='noreferrer'
+              className='text-6xl'
             >
               <InstagramIcon className='text-6xl cursor-pointer' />
             </a>
@@ -66,6 +73,7 @@ const Contact = () => {
               href='https://twitter.com/KanchanSamajS'
               target='_blank'
               rel='noreferrer'
+              className='text-6xl'
             >
               <TwitterIcon className='text-6xl cursor-pointer' />
             </a>

@@ -53,7 +53,7 @@ const Experience = () => {
                   key={index}
                   className='flex align-middle space-between gap-10 lg:px-40 my-3 lg:my-4'
                 >
-                  <p className='numbers text-2xl lg:text-8xl text-gray-400'>
+                  <p className='numbers text-lg sm:text-2xl lg:text-8xl text-gray-400'>
                     {++index}
                   </p>
                   <div>
@@ -64,19 +64,19 @@ const Experience = () => {
                         width='25px'
                         height='25px'
                         objectFit='contain'
-                        className='rounded-full'
+                        className='rounded-full mr-5'
                       />
-                      <span className='lg:text-2xl md:text-xl text-lg'>
+                      <span className='lg:text-2xl md:text-xl text-sm sm:text-lg'>
                         {item.company}
                       </span>
                       <span className=' grid place-items-center text-cyan-400 text-xs font-thin'>
                         {item.duration}
                       </span>
                     </p>
-                    <p className='lg:text-xl text-md my-3 text-gray-400'>
+                    <p className='lg:text-xl text-xs sm:text-md my-3 text-gray-400'>
                       {item.position}
                     </p>
-                    <p className='lg:w-[70%] font-light text-md my-3 paragraph'>
+                    <p className='lg:w-[70%] font-light text-xs sm:text-md my-3 paragraph'>
                       {item.desc}
                     </p>
                   </div>
