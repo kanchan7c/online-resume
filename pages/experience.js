@@ -18,7 +18,7 @@ const Experience = () => {
           />
           <link rel='shortcut icon' href='work.png' type='image/x-icon' />
         </Head>
-        <div className='md:min-h-[80vh] p-20 rounded-xl shadow-md shadow-gray-300  border border-gray-50 bg-gradient-to-tr from-gray-900 to-gray-700'></div>
+        <div className='md:min-h-[80vh] p-5 lg:p-20rounded-xl shadow-md shadow-gray-300  border border-gray-50 bg-gradient-to-tr from-gray-900 to-gray-700'></div>
       </Wrapper>
       <Footer />
     </>

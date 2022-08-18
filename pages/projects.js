@@ -43,7 +43,7 @@ let data = [
       'Netflix Homepage Clone is built using React JS. It uses themoviedb API to fetch data and display results. The mini video trailers are linked to the Youtube API',
     imageURL: '/images/netflix-copy.png',
     visitingURL: 'https://hardcore-ritchie-ef4313.netlify.app/',
-    date: '16-Nov-2021',
+    date: '16 Nov 2021',
     codeURL: 'https://github.com/kanchan7c/netflix-homepage-clone',
     technologies: ['/react.png', '/css-3.png'],
   },
@@ -55,7 +55,7 @@ let data = [
     visitingURL: 'https://practical-knuth-957e71.netlify.app/search',
     date: '21 Feb 2022',
     codeURL: 'https://github.com/kanchan7c/real_home',
-    technologies: ['/react.png', '/css-3.png'],
+    technologies: ['/nextjs.png', '/css-3.png'],
   },
   {
     title: 'Tesla Homepage Copy',
@@ -65,7 +65,7 @@ let data = [
     visitingURL: 'https://jolly-torvalds-7054d4.netlify.app/',
     date: '15 Nov 2022',
     codeURL: 'https://github.com/kanchan7c/tesla-homepage-clone-updated',
-    technologies: ['/react.png', '/css-3.png'],
+    technologies: ['/react.png', '/css-3.png', '/styled-components.png'],
   },
   {
     title: 'Coding Services',
@@ -94,69 +94,21 @@ const Projects = () => {
         </Head>
         <div className='md:min-h-[80vh] p-5 lg:p-20 rounded-xl shadow-md shadow-gray-300  border border-gray-50 bg-gradient-to-tr from-gray-900 to-gray-700'>
           <SectionTitle sectionName='Personal Projects' />
-          <Card
-            title={data[0].title}
-            cardNumber={1}
-            code={data[0].codeURL}
-            demo={data[0].visitingURL}
-            tech={data[0].technologies}
-            snapshot={data[0].imageURL}
-            description={data[0].description}
-          />
-          <Card
-            title={data[1].title}
-            cardNumber={2}
-            code={data[1].codeURL}
-            demo={data[1].visitingURL}
-            tech={data[1].technologies}
-            snapshot={data[1].imageURL}
-            description={data[1].description}
-          />
-          <Card
-            title={data[2].title}
-            cardNumber={3}
-            code={data[2].codeURL}
-            demo={data[2].visitingURL}
-            tech={data[2].technologies}
-            snapshot={data[2].imageURL}
-            description={data[2].description}
-          />
-          <Card
-            title={data[3].title}
-            cardNumber={4}
-            code={data[3].codeURL}
-            demo={data[3].visitingURL}
-            tech={data[3].technologies}
-            snapshot={data[3].imageURL}
-            description={data[3].description}
-          />
-          <Card
-            title={data[4].title}
-            cardNumber={5}
-            code={data[4].codeURL}
-            demo={data[4].visitingURL}
-            tech={data[4].technologies}
-            snapshot={data[4].imageURL}
-            description={data[4].description}
-          />
-          <Card
-            title={data[5].title}
-            cardNumber={6}
-            code={data[5].codeURL}
-            demo={data[5].visitingURL}
-            tech={data[5].technologies}
-            snapshot={data[5].imageURL}
-            description={data[5].description}
-          />
-          <Card
-            title={data[6].title}
-            cardNumber={7}
-            code={data[6].codeURL}
-            demo={data[6].visitingURL}
-            tech={data[6].technologies}
-            snapshot={data[6].imageURL}
-            description={data[6].description}
-          />
+          {data.map((data, index) => {
+            return (
+              <Card
+                key={index}
+                title={data?.title}
+                cardNumber={++index}
+                code={data?.codeURL}
+                demo={data?.visitingURL}
+                tech={data?.technologies}
+                snapshot={data?.imageURL}
+                date={data?.date}
+                description={data?.description}
+              />
+            );
+          })}
         </div>
       </Wrapper>
       <Footer />

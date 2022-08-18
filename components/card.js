@@ -4,6 +4,7 @@ import Button from './button';
 
 const Card = ({
   cardNumber,
+  date,
   code,
   demo,
   tech,
@@ -24,13 +25,17 @@ const Card = ({
             height={'10vh'}
             width={'20vw'}
             layout='responsive'
-            className='overflow-scroll'
           />
         </div>
-        <div className='md:text-2xl mt-2'>{title}</div>
+        <div className='md:text-2xl mt-5 lg:mt-10'>
+          {title}
+          <span className='text-xs font-extralight align-middle mx-5'>
+            {date}
+          </span>
+        </div>
 
         <div className='mt-2 text-xs sm:text-sm'>{description}</div>
-        <div className='flex gap-5 mt-5'>
+        <div className='flex gap-5 mt-5 lg:mt-10 '>
           {tech.map((item) => (
             <Image
               key={item}
@@ -39,11 +44,11 @@ const Card = ({
               objectFit='contain'
               height={'30rem'}
               width={'30rem'}
-              className='rounded-full'
+              className='rounded-full bg-white'
             />
           ))}
         </div>
-        <div className='flex gap-1 lg:gap-5 mt-5'>
+        <div className='flex gap-1 lg:gap-5 lg:mt-10 mt-5'>
           <Button url={demo} target='_blank'>
             View Demo
           </Button>
