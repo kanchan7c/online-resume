@@ -10,7 +10,7 @@ const Experience = () => {
   const work = [
     {
       company: 'Career Break',
-      duration: '(Jan 2019 - Present)',
+      duration: '(Jan 2022 - Present)',
       icon: '/break.png',
       position: 'Full-time Parenting',
       desc: 'I have taken a break from work to take care of my kid. During this break I have devoted my time towards learning Web Design and Development.',
